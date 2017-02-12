@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import uk.co.jrtapsell.prevWalker.controls.ModeDropdown?>
+<?import uk.co.jrtapsell.prevWalker.controls.PrefTable?>
+<?import uk.co.jrtapsell.prevWalker.controls.PrefTree?>
+<SplitPane dividerPositions="0.4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+           prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.co.jrtapsell.prevWalker.ui.Controller">
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+        <center>
+          <PrefTree fx:id="treeView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+        </center>
+        <top>
+          <ModeDropdown prefWidth="150.0" BorderPane.alignment="CENTER" fx:id="mode"/>
+        </top>
+    </BorderPane>
+    <PrefTable fx:id="tableView" layoutX="14.0" layoutY="27.0" prefHeight="200.0" prefWidth="200.0"/>
+</SplitPane>
